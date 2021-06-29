@@ -50,14 +50,17 @@ export default class ActivityList extends Component {
   render() {
     return (
       <div>
-        <h3>Jouw Activiteiten</h3>
+        <br></br>
+        <div className="form-group">
+        <a href="/activity"><input type="button" value="Nieuwe Activiteit" className="btn btn-primary" /></a>
+        </div>
         <table className="table">
           <thead className="thead-light">
             <tr>
               <th>Omschrijving</th>
               <th>Tijd in minuten</th>
               <th>Datum</th>
-              <th>Aanpassen</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
