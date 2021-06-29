@@ -20,9 +20,11 @@ connection.once('open', () => {
   console.log("Server started successfully.");
 })
 
+const activitiesRouter = require('./routes/activities');
 const exercisesRouter = require('./routes/exercises');
 const usersRouter = require('./routes/users');
 
+app.use('/activities', activitiesRouter);
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
 
