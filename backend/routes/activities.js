@@ -2,7 +2,7 @@ const router = require('express').Router();
 let Activity = require('../models/activity.model');
 
 router.route('/').get((req, res) => {
-  Activities.find()
+  Activity.find()
     .then(activities => res.json(activities))
     .catch(err => res.status(400).json('Error: ' + err));
 });
